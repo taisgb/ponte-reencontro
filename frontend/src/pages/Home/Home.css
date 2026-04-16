@@ -1,0 +1,104 @@
+/* src/pages/Home/Home.css */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e67e22;
+  --bg-color: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-main: #333;
+  --text-muted: #666;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.home-container h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid Responsivo */
+.pessoas-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card da Pessoa */
+.pessoa-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pessoa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem */
+.pessoa-imagem {
+  width: 100%;
+  height: 320px;
+  object-fit: cover; 
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Conteúdo do Card */
+.pessoa-card h3 {
+  padding: 15px 15px 5px;
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.pessoa-card p {
+  padding: 0 15px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.pessoa-card p strong {
+  color: var(--text-main);
+}
+
+/* Botão */
+.btn-comentar {
+  margin: 20px 15px;
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.btn-comentar:hover {
+  background-color: #2980b9;
+}
+
+.home-container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  grid-column: 1 / -1;
+}
