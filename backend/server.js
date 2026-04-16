@@ -45,9 +45,9 @@ app.post('/usuarios/login', async (req, res) => {
 
     if (usuario && await bcrypt.compare(senha, usuario.senha)) {
         const token = jwt.sign({id: usuario.id, nome: usuario.nome}, SECRET_KEY, {expiresIn: '24h'});
-        res.json({message: 'Login bem-sucedido', token});
+        return res.json({message: 'Login bem-sucedido', token});        
     }
-    res.status(401).json({error: 'Email ou senha inválidos'});
+    return res.status(401).json({error: 'Email ou senha inválidos'});
 
 });
 
