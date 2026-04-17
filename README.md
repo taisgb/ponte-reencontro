@@ -33,3 +33,9 @@ O **Ponte de Reencontro** é uma plataforma dedicada a auxiliar na localização
 | **POST** | `/desaparecidos` | Registra uma nova pessoa desaparecida | **Privado (Token)** |
 | **GET** | `/desaparecidos/:id/comentarios` | Busca comentários de um registro específico | Público |
 | **POST** | `/comentarios` | Envia um novo comentário ou pista | **Privado (Token)** |
+
+### Deploy Backend
+- https://ponte-reencontro.onrender.com
+
+### Deploy Frontend
+- https://ponte-reencontro.vercel.app/
