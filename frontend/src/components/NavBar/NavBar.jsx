@@ -28,7 +28,7 @@ const NavBar = () => {
           </>
         ) : (
           <>
-            <Link to="/cadastrar-desaparecido" className="nav-link">Novo Registro</Link>
+            <Link to="/cadastrar-desaparecido" className="nav-link">Anunciar Desaparecido</Link>
             <button onClick={handleLogout} className="nav-btn logout">Sair</button>
           </>
         )}

@@ -1,0 +1,116 @@
+.cadastro-desaparecido-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: var(--bg-color);
+
+}
+
+.cadastro-desaparecido-form {
+  background: var(--card-bg);
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cadastro-desaparecido-form h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Estilização Geral de Inputs e Textarea */
+.cadastro-desaparecido-form input,
+.cadastro-desaparecido-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fafafa;
+}
+
+.cadastro-desaparecido-form input:focus,
+.cadastro-desaparecido-form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  background-color: #fff;
+}
+
+.cadastro-desaparecido-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Grupo específico para a Data */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+/* Botão de Envio */
+.btn-enviar {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 26px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-enviar:active {
+  transform: translateY(0);
+}
+
+/* Mensagens de Erro */
+.error-message {
+  background-color: #fee;
+  color: #e74c3c;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent-color);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .cadastro-desaparecido-form {
+    padding: 25px 20px;
+  }
+  
+  .cadastro-desaparecido-form h2 {
+    font-size: 1.5rem;
+  }
+}

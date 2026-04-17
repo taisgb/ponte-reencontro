@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import api from "../../services/api";
 import "./Home.css";
 
@@ -35,7 +36,7 @@ const Home = () => {
                             <p><strong>Características:</strong> {p.caracteristicas}</p>
                             <p><strong>Data:</strong> {p.data_desaparecimento}</p>
                             <p><strong>Local:</strong> {p.local_desaparecimento}</p>
-                            <button className="btn-comentar"> Ajudar</button>
+                            <Link to={`/perfil/${p.id}`} className="btn-comentar">Ver Perfil</Link>
                         </div>
                     ))
                 )}

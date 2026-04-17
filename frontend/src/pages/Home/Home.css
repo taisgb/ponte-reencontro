@@ -54,7 +54,9 @@
 .pessoa-imagem {
   width: 100%;
   height: 320px;
-  object-fit: cover; 
+  object-fit: cover;
+  background-color: #f4f7f6;
+  vertical-align: middle;
   border-bottom: 3px solid var(--secondary-color);
 }
 
